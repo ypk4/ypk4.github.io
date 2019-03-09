@@ -1,6 +1,6 @@
 /*
   Theme Name: NewBiz
-  Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
+  Theme URL: https://bootstrapmade.com/newbiz-bootstrap-business-projectslate/
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
 */
@@ -125,34 +125,26 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 80px;
+  height: 50px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
-  background: #fff;
+  padding: 10px 0;
+  /*background: #fff;*/
+  background: #004a99;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
 
 #header.header-scrolled,
 #header.header-pages {
-  height: 60px;
+  height: 50px;
   padding: 10px 0;
 }
 
-#header .logo h1 {
-  font-size: 36px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #00366f;
+#header .logo a,
+#header .logo a:hover {
+  font-size: 21px;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -201,7 +193,7 @@ h6 {
 }
 
 #intro .intro-info .btn-get-started,
-#intro .intro-info .btn-services {
+#intro .intro-info .btn-experience {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -226,11 +218,11 @@ h6 {
   color: #fff;
 }
 
-#intro .intro-info .btn-services {
+#intro .intro-info .btn-experience {
   border: 2px solid #fff;
 }
 
-#intro .intro-info .btn-services:hover {
+#intro .intro-info .btn-experience:hover {
   background: #007bff;
   border-color: #007bff;
   color: #fff;
@@ -243,6 +235,7 @@ h6 {
 /* Desktop Navigation */
 
 .main-nav {
+
   /* Drop Down */
   /* Deep Drop Down */
 }
@@ -251,6 +244,7 @@ h6 {
 .main-nav * {
   margin: 0;
   padding: 0;
+  top: 0;
   list-style: none;
 }
 
@@ -263,7 +257,8 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #004289;
+  /*color: #004289;*/
+  color: #ffffff;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -274,8 +269,9 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #007bff;
+  color: #ffffff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .main-nav .drop-down ul {
@@ -420,7 +416,7 @@ h6 {
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #004289;
+  color: #ffffff;
 }
 
 .mobile-nav-overly {
@@ -454,10 +450,10 @@ h6 {
 /* Sections Header
 --------------------------------*/
 
-.section-header h3 {
-  font-size: 36px;
+.section-header h4 {
+  font-size: 32px;
   color: #283d50;
-  text-align: center;
+  text-align: left;
   font-weight: 500;
   position: relative;
 }
@@ -482,8 +478,9 @@ h6 {
 --------------------------------*/
 
 #about {
+  margin-top: 20px;
   background: #fff;
-  padding: 60px 0;
+  padding: 50px 0 20px;
 }
 
 #about .about-container .background {
@@ -573,7 +570,7 @@ h6 {
 }
 
 #about .about-extra {
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 #about .about-extra h4 {
@@ -581,155 +578,79 @@ h6 {
   font-size: 24px;
 }
 
-/* Services Section
+/* Experience Section
 --------------------------------*/
 
-#services {
-  padding: 60px 0 40px 0;
+#experience {
+  margin-top: 0px;
+  padding: 30px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#services .box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 0 10px 40px 10px;
-  background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-  transition: all 0.3s ease-in-out;
-}
-
-#services .box:hover {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-}
-
-#services .icon {
-  position: absolute;
-  left: -10px;
-  top: calc(50% - 32px);
-}
-
-#services .icon i {
-  font-size: 64px;
-  line-height: 1;
-  transition: 0.5s;
-}
-
-#services .title {
-  margin-left: 40px;
-  font-weight: 700;
+#experience .row {
   margin-bottom: 15px;
-  font-size: 18px;
+  margin-top: 15px;
 }
 
-#services .title a {
-  color: #111;
-}
-
-#services .box:hover .title a {
-  color: #007bff;
-}
-
-#services .description {
-  font-size: 14px;
-  margin-left: 40px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
-
-#why-us {
-  padding: 60px 0;
-  background: #004a99;
-}
-
-#why-us .section-header h3,
-#why-us .section-header p {
-  color: #fff;
-}
-
-#why-us .card {
-  background: #00458f;
-  border-color: #00458f;
-  border-radius: 10px;
-  margin: 0 15px;
-  padding: 15px 0;
-  text-align: center;
-  color: #fff;
-  transition: 0.3s ease-in-out;
-  height: 100%;
-}
-
-#why-us .card:hover {
-  background: #003b7a;
-  border-color: #003b7a;
-}
-
-#why-us .card i {
-  font-size: 48px;
-  padding-top: 15px;
-  color: #bfddfe;
-}
-
-#why-us .card h5 {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-#why-us .card p {
-  font-size: 15px;
-  color: #d8eafe;
-}
-
-#why-us .card .readmore {
-  color: #fff;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease-in-out;
-  border-bottom: #00458f solid 2px;
-}
-
-#why-us .card .readmore:hover {
-  border-bottom: #fff solid 2px;
-}
-
-#why-us .counters {
-  padding-top: 40px;
-}
-
-#why-us .counters span {
-  font-family: "Montserrat", sans-serif;
+#experience div div h5 {
   font-weight: bold;
-  font-size: 48px;
-  display: block;
-  color: #fff;
+  margin: 5px 0 5px;
 }
 
-#why-us .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #cce5ff;
+#experience div div p {
+  margin: 5px 0 5px;
 }
 
-/* Portfolio Section
+.imagediv {
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+
+/* Education */
+#education {
+  margin-top: 0px;
+  padding: 30px 0 40px 0;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#education .row {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#education div div h5 {
+  font-weight: bold;
+  margin: 5px 0 5px;
+}
+
+#education div div p {
+  margin: 5px 0 5px;
+}
+
+.imagediv {
+  text-align: center;
+  vertical-align: middle;
+  
+}
+
+/* projects Section
 --------------------------------*/
 
-#portfolio {
+#projects {
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#portfolio #portfolio-flters {
+#projects #projects-flters {
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-#portfolio #portfolio-flters li {
+#projects #projects-flters li {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
@@ -744,35 +665,35 @@ h6 {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
+#projects #projects-flters li:hover,
+#projects #projects-flters li.filter-active {
   background: #007bff;
   color: #fff;
 }
 
-#portfolio #portfolio-flters li:last-child {
+#projects #projects-flters li:last-child {
   margin-right: 0;
 }
 
-#portfolio .portfolio-item {
+#projects .projects-item {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-#portfolio .portfolio-item .portfolio-wrap {
+#projects .projects-item .projects-wrap {
   overflow: hidden;
   position: relative;
   border-radius: 6px;
   margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-wrap:hover img {
+#projects .projects-item .projects-wrap:hover img {
   opacity: 0.4;
   transition: 0.3s;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info {
+#projects .projects-item .projects-wrap .projects-info {
   position: absolute;
   top: 0;
   right: 0;
@@ -800,7 +721,7 @@ h6 {
   transition: 0.2s linear;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 {
+#projects .projects-item .projects-wrap .projects-info h4 {
   font-size: 22px;
   line-height: 1px;
   font-weight: 700;
@@ -808,15 +729,15 @@ h6 {
   padding-bottom: 0;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
+#projects .projects-item .projects-wrap .projects-info h4 a {
   color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a:hover {
+#projects .projects-item .projects-wrap .projects-info h4 a:hover {
   color: #007bff;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info p {
+#projects .projects-item .projects-wrap .projects-info p {
   padding: 0;
   margin: 0;
   color: #e2effe;
@@ -825,8 +746,8 @@ h6 {
   text-transform: uppercase;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details {
+#projects .projects-item .projects-wrap .projects-info .link-preview,
+#projects .projects-item .projects-wrap .projects-info .link-details {
   display: inline-block;
   line-height: 1;
   text-align: center;
@@ -837,99 +758,69 @@ h6 {
   margin: 10px 4px 0 4px;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview i,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details i {
+#projects .projects-item .projects-wrap .projects-info .link-preview i,
+#projects .projects-item .projects-wrap .projects-info .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover {
+#projects .projects-item .projects-wrap .projects-info .link-preview:hover,
+#projects .projects-item .projects-wrap .projects-info .link-details:hover {
   background: #3395ff;
 }
 
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview:hover i,
-#portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-details:hover i {
+#projects .projects-item .projects-wrap .projects-info .link-preview:hover i,
+#projects .projects-item .projects-wrap .projects-info .link-details:hover i {
   color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-wrap:hover {
+#projects .projects-item .projects-wrap:hover {
   background: #003166;
 }
 
-#portfolio .portfolio-item .portfolio-wrap:hover .portfolio-info {
+#projects .projects-item .projects-wrap:hover .projects-info {
   opacity: 1;
 }
 
-/* Testimonials Section
+/* publications Section
 --------------------------------*/
 
-#testimonials {
-  padding: 60px 0;
+#publications {
+  margin-top: 0px;
+  padding: 30px 0 40px 0;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#testimonials .section-header {
-  margin-bottom: 40px;
+#publications .row {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-#testimonials .testimonial-item .testimonial-img {
-  width: 120px;
-  border-radius: 50%;
-  border: 4px solid #fff;
-  float: left;
-}
-
-#testimonials .testimonial-item h3 {
-  font-size: 20px;
+#publications div div h5 {
   font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: #111;
-  margin-left: 140px;
+  margin: 5px 0 10px;
 }
 
-#testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: #999;
-  margin: 0 0 15px 0;
-  margin-left: 140px;
+#publications div div h6 {
+  margin: 0 0 5px;
 }
 
-#testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 0 15px 140px;
+#publications div div p {
+  margin: 0 0 5px;
 }
 
-#testimonials .owl-nav,
-#testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
 
-#testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#testimonials .owl-dot.active {
-  background-color: #007bff;
-}
-
-/* Team Section
+/* achievements Section
 --------------------------------*/
 
-#team {
+#achievements {
   background: #fff;
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-#team .member {
+#achievements .member {
   text-align: center;
   margin-bottom: 20px;
   position: relative;
@@ -937,7 +828,7 @@ h6 {
   overflow: hidden;
 }
 
-#team .member .member-info {
+#achievements .member .member-info {
   opacity: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -959,50 +850,50 @@ h6 {
   transition: 0.2s;
 }
 
-#team .member .member-info-content {
+#achievements .member .member-info-content {
   margin-top: 50px;
   transition: margin 0.2s;
 }
 
-#team .member:hover .member-info {
+#achievements .member:hover .member-info {
   background: rgba(0, 62, 128, 0.7);
   opacity: 1;
   transition: 0.4s;
 }
 
-#team .member:hover .member-info-content {
+#achievements .member:hover .member-info-content {
   margin-top: 0;
   transition: margin 0.4s;
 }
 
-#team .member h4 {
+#achievements .member h4 {
   font-weight: 700;
   margin-bottom: 2px;
   font-size: 18px;
   color: #fff;
 }
 
-#team .member span {
+#achievements .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
   color: #fff;
 }
 
-#team .member .social {
+#achievements .member .social {
   margin-top: 15px;
 }
 
-#team .member .social a {
+#achievements .member .social a {
   transition: none;
   color: #fff;
 }
 
-#team .member .social a:hover {
+#achievements .member .social a:hover {
   color: #007bff;
 }
 
-#team .member .social i {
+#achievements .member .social i {
   font-size: 18px;
   margin: 0 2px;
 }
@@ -1332,7 +1223,7 @@ h6 {
 --------------------------------------------------------------*/
 
 @media (min-width: 992px) {
-  #testimonials .testimonial-item p {
+  #publications .testimonial-item p {
     width: 80%;
   }
 }
@@ -1365,7 +1256,7 @@ h6 {
     text-align: center;
   }
 
-  #why-us .card {
+  #education .card {
     margin: 0;
   }
 }
@@ -1390,18 +1281,18 @@ h6 {
     width: 100%;
   }
 
-  #testimonials .testimonial-item {
+  #publications .testimonial-item {
     text-align: center;
   }
 
-  #testimonials .testimonial-item .testimonial-img {
+  #publications .testimonial-item .testimonial-img {
     float: none;
     margin: auto;
   }
 
-  #testimonials .testimonial-item h3,
-  #testimonials .testimonial-item h4,
-  #testimonials .testimonial-item p {
+  #publications .testimonial-item h3,
+  #publications .testimonial-item h4,
+  #publications .testimonial-item p {
     margin-left: 0;
   }
 }
